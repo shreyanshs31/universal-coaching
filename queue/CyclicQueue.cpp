@@ -41,17 +41,27 @@ void peek() {
     cout<<Queue[front]<<endl;
 }
 
+void recursiveDisplay(int i) {
+    if(i == rear) {
+        return;
+    }
+    cout<<Queue[i]<<" ";
+    recursiveDisplay((i+1) % len);
+}
+
 void display() {
     if(isEmpty()) {
         cout<<"Queue is empty"<<endl;
         return;
     }
-    int i = front;
-    do {
-        cout<<Queue[i++]<<" ";
-        i%=len;
-    }
-    while (i!=rear);
+    // int i = front;
+    // do {
+    //     cout<<Queue[i++]<<" ";
+    //     i%=len;
+    // }
+    // while (i!=rear);
+    recursiveDisplay(front);
+    cout<<endl;
 }
 
 int main() {
