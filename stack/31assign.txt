@@ -1,0 +1,27 @@
+What is a stack data structure?
+Ans1. A stack is a linear data structure that follows the Last In First Out (LIFO) principle
+
+How does a stack differ from a queue?
+A stack follows a "Last In, First Out" (LIFO) principle, meaning the last element added is the first one removed, while a queue follows a "First In, First Out" (FIFO) principle
+
+What are the basic operations that can be performed on a stack?
+Push: Adds an element to the top of the stack
+Pop: Removes the top element from the stack
+IsEmpty: Checks if the stack is empty
+Top: Displays the top element of the stack
+
+What is the time complexity of the push operation on a stack?
+The time complexity of the "push" operation on a stack is O(1)
+
+What is the time complexity of the pop operation on a stack?
+The time complexity of the pop operation on a stack is O(1)
+
+What is the purpose of the peek operation on a stack?
+To display the topmost element in the stack.
+
+How do you implement a dynamic stack that can grow or shrink as needed?
+dynamic stack that can grow or shrink as needed, you typically use a linked list as the underlying data structure
+
+How do you implement a stack with a maximum size limit?
+using default
+
