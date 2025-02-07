@@ -1,3 +1,8 @@
+// 8. How do you check if a stack is empty?
+// 9. How do you check if a stack is full?
+//13. How do you implement a stack with multiple push and pop operations?
+
+
 #include <stdio.h>
 #include <stdlib.h>
 

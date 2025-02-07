@@ -5,26 +5,19 @@ How do you implement a stack-based algorithm for finding the maximum element in 
 #include <iostream>
 #include <stack>
 #include <vector>
-#include <limits.h>
 
 using namespace std;
 
 int findMax(vector<int>& arr) {
     stack<int> s;
-    int maxElement = INT_MIN;
 
     for (int num : arr) {
-        if (s.empty() || num > s.top()) {
+        if (s.empty() || num >= s.top()) {
             s.push(num);
-        } else {
-            s.push(s.top()); // Duplicate the top element if the current element is not greater
         }
     }
 
-    while (!s.empty()) {
-        maxElement = max(maxElement, s.top());
-        s.pop();
-    }
+    int maxElement = s.top();
 
     return maxElement;
 }
