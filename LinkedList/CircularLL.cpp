@@ -41,7 +41,14 @@ class CLL{
             last = temp;
             temp = temp->next;
         }
-        
+        if(temp == head) {
+            head = head->next;
+        }
+        if(temp->next = head) {
+            last->next = head;
+        }
+        last->next = temp->next;
+        delete temp;
     }
     void display() {
         Node *temp = head;
