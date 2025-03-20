@@ -29,10 +29,6 @@ class BST {
         return node->height;
     }
 
-    int getValue(Node *node) {
-        return node->val;
-    }
-
     bool isEmpty() {
         return root==nullptr;
     }
